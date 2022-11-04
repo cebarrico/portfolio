@@ -5,6 +5,8 @@ const checked = localStorage.getItem("check");
 const contact = document.querySelector("#contact");
 const menuBtm = document.querySelector("#profile-avatar");
 const menu = document.querySelector(".menu");
+const btms = document.querySelectorAll(".btm-menu");
+
 menuBtm.addEventListener("click", () => {
   const size = window.innerWidth;
   console.log(menu);
@@ -12,16 +14,19 @@ menuBtm.addEventListener("click", () => {
     menu.classList.toggle("menu-click");
   }
 });
+btms.forEach((btm) => {
+  btm.addEventListener("click", () => {
+    menu.classList.toggle("menu-click");
+  });
+});
 checkbox.addEventListener("click", () => {
   const check = checkbox.checked;
-  console.log(JSON.parse(checked));
+
   localStorage.setItem("check", check);
   if (checkbox.checked == true) {
     setTimeout(() => {
       window.location.href = "./src/pages/english.html";
     }, 800);
-  } else {
-    console.log("pt-br");
   }
 });
 if (checked == "true") {

@@ -1,10 +1,3 @@
-/* .list-know {
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-} */
 #knowledge {
   flex-direction: column;
   margin-top: 270px;
@@ -51,14 +44,12 @@
   content: "";
   position: absolute;
   width: 100px;
-  /* background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(48, 51, 255)); */
   height: 130%;
-  /* animation: rotBGimg 3s linear infinite;
-  transition: all 0.2s linear; */
 }
+
 .profile-img-container {
-  max-width: 290px;
-  height: 354px;
+  min-width: 290px;
+  min-height: 354px;
   background: #07182e;
   display: flex;
   flex-direction: column;
