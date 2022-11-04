@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/globalStyles.css" />
+    <link rel="stylesheet" href="./src/css/bg.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/changeLangue.css" />
+    <link rel="stylesheet" href="./src/css/knowledgeCards.css" />
+    <link rel="stylesheet" href="./src/css/projectCars.css" />
+    <link rel="stylesheet" href="./src/css/moda.css" />
+    <title>Celso Barrico</title>
+    <link rel="icon" href="./src/img/favicon.png" />
+    <script defer type="module" src="./src/script/script.js"></script>
+    <script defer type="module" src="./src/script/observer.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="typewriter">
+          <h2>&lt;C'B&gt;</h2>
+        </div>
+        <!-- <div class="menu-hamburg">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div> -->
+        <img
+          id="profile-avatar"
+          src="./src/img/picasion.com_3f2682909ac48509ef06ed1f28d3421b.gif"
+          alt=""
+        />
+        <div class="menu">
+          <a href="#about">Sobre</a>
+          <a href="#knowledge">Conhecimentos</a>
+          <a href="#projects">Projetos</a>
+          <a id="contact" href="#">Contato</a>
+        </div>
+        <label class="language" for="toggle">
+          <input id="toggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <div id="about"></div>
+      <section class="container container-about">
+        <div id="about" class="observer-about">
+          <h3>Ola, meu nome é</h3>
+          <h1 class="">Celso <span class="animate-charcter">Barrico.</span></h1>
+
+          <p>Sou um desenvolverdor Full-Stack em formação &#128526;</p>
+          <p>
+            Sempre fui apaixonado pela área da tecnologia, e em junho de 2022
+            decidi começar minha carreira como desenvolvedor,abaixo segue um
+            pouco dos meus conhecimentos e projetos.
+          </p>
+        </div>
+        <section class="profile-img-container opacity">
+          <img class="profile-img" src="./src/img/20180727_195934.jpg" alt="" />
+        </section>
+      </section>
+      <section id="knowledge" class="container">
+        <div class="span opacity">
+          <span> CONHECIMENTOS </span>
+        </div>
+        <ul class="main-know">
+          <li class="list-know html opacity">
+            <img class="know-img" src="./src/img/html-5.png" alt="" />
+            <p>
+              HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
+              mais básico da web. Define o significado e a estrutura do conteúdo
+              da web.
+            </p>
+          </li>
+          <li class="list-know css opacity">
+            <img class="know-img" src="./src/img/css-3.png" alt="" />
+            <p>
+              O que é o no CSS? CSS é a sigla para Cascading Style Sheets, ou
+              seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao
+              código criado por linguagens como HTML, XML ou XHTML, por exemplo.
+            </p>
+          </li>
+          <li class="list-know js opacity">
+            <img class="know-img" src="./src/img/javascript.png" alt="" />
+            <p>
+              JavaScript® (JS) é uma linguagem leve, interpretada e baseada em
+              objetos com funções de primeira classe, mais conhecida como a
+              linguagem de script para páginas Web.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="projects" class="container">
+        <div class="span opacity">
+          <span> PROJETOS </span>
+        </div>
+        <ul class="main-projects">
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="./src/img/pikachu.gif" alt="" />
+            </div>
+            <div class="card-info">
+              <p>Pokedex</p>
+              <p class="text-body">
+                Uma pokedex, consumindo uma api pokemon, foi utilzado HTML,CSS e
+                JS.
+              </p>
+              <div class="techs">
+                <img src="./src/img/html-5.png" alt="" />
+                <img src="./src/img/css-3.png" alt="" />
+                <img src="./src/img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a href="https://cebarrico.github.io/PokeDex/" class="btm-repo"
+                  >Pokedex</a
+                >
+                <a href="https://github.com/cebarrico/PokeDex" class="btm-repo"
+                  >Repositorio</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="./src/img/mario.gif" alt="" />
+            </div>
+            <div class="card-info">
+              <p>Mario Game</p>
+              <p class="text-body">
+                Um joguinho de navegador, do Super Mario, foi minha primeira
+                aventura no mundo da Dev.
+              </p>
+              <div class="techs">
+                <img src="./src/img/html-5.png" alt="" />
+                <img src="./src/img/css-3.png" alt="" />
+                <img src="./src/img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a
+                  href="https://cebarrico.github.io/primeirojogo/"
+                  class="btm-repo"
+                  >Mario Run</a
+                >
+                <a
+                  href="https://github.com/cebarrico/primeirojogo"
+                  class="btm-repo"
+                  >Repositorio</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="./src/img/gitsearch.png" alt="" />
+            </div>
+            <div class="card-info">
+              <p>GitSearch</p>
+              <p class="text-body">
+                Projeto acedemico,da Kenzy Academy, utlizando a API do GitHub,
+                para pesquisar seus usuarios e repositorios.
+              </p>
+              <div class="techs">
+                <img src="./src/img/html-5.png" alt="" />
+                <img src="./src/img/css-3.png" alt="" />
+                <img src="./src/img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a
+                  href="https://cebarrico.github.io/primeirojogo/"
+                  class="btm-repo"
+                  >GitSearch</a
+                >
+                <a
+                  href="https://github.com/cebarrico/primeirojogo"
+                  class="btm-repo"
+                  >Repositorio</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div class="light x1"></div>
+    <div class="light x2"></div>
+    <div class="light x3"></div>
+    <div class="light x4"></div>
+    <div class="light x5"></div>
+    <div class="light x6"></div>
+    <div class="light x7"></div>
+    <div class="light x8"></div>
+    <div class="light x9"></div>
+  </body>
+</html>

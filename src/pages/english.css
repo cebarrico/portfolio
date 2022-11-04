@@ -1,0 +1,52 @@
+.language {
+  position: absolute;
+  right: 0;
+  transform: translateY(42px);
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+#toggle {
+  display: none;
+}
+
+.slider {
+  display: block;
+  font-size: 10px;
+  position: relative;
+}
+
+.slider::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #e03c3c;
+  background-image: url(/src/img/united-states.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+  transition: background-color 0.25s, transform 0.25s ease-in;
+}
+
+#toggle:checked + .slider::after {
+  content: "";
+  background-image: url(/src/img/brazil.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(25px) rotate(360deg);
+}

@@ -1,0 +1,138 @@
+/* .list-know {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+} */
+#knowledge {
+  flex-direction: column;
+  margin-top: 270px;
+}
+.main-know {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  margin-top: 270px;
+}
+.list-know {
+  max-width: 310px;
+  height: 374px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.list-know p,
+.know-img {
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+  padding: 30px;
+}
+.list-know > p {
+  height: 100px;
+  overflow: scroll;
+}
+.list-know > p::-webkit-scrollbar {
+  display: none;
+}
+
+.list-know::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  /* background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(48, 51, 255)); */
+  height: 130%;
+  /* animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear; */
+}
+.profile-img-container {
+  max-width: 290px;
+  height: 354px;
+  background: #07182e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.profile-img-container .profile-img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 15px;
+}
+.profile-img-container::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(48, 51, 255));
+
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-img-container::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+.list-know::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+.list-know:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+.html:hover:before {
+  background-image: linear-gradient(180deg, #d32d04, #ff651e);
+  animation: rotBGimg 3.5s linear infinite;
+  transform: scale(2);
+}
+.css:hover:before {
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(48, 51, 255));
+  animation: rotBGimg 3.5s linear infinite;
+  transform: scale(2);
+}
+.js:hover:before {
+  background-image: linear-gradient(180deg, #e6a329, #f1bf22);
+  animation: rotBGimg 3.5s linear infinite;
+  transform: scale(2);
+}
+
+.appear {
+  opacity: 1;
+}

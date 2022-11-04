@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/globalStyles.css" />
+    <link rel="stylesheet" href="../css/bg.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/changeLangue.css" />
+    <link rel="stylesheet" href="../css/knowledgeCards.css">
+    <link rel="stylesheet" href="../css/projectCars.css">
+    <link rel="stylesheet" href="../css/moda.css">
+    <title>Celso Barrico</title>
+    <link rel="icon" href="../img/favicon.png" />
+    <script defer type="module" src="./script.js"></script>
+    <script defer type="module" src="../script/observer.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="typewriter">
+          <h2>&lt;C'B&gt;</h2>
+        </div>
+
+        <img
+          id="profile-avatar"
+          src="../img/picasion.com_3f2682909ac48509ef06ed1f28d3421b.gif"
+          alt=""
+        />
+        <div class="menu">
+          <a href="#about">About</a>
+          <a href="#knowledge">Knowledge</a>
+          <a href="#projects">Projects</a>
+          <a id="contact" href="#">Contact</a>
+        </div>
+        <label class="language" for="toggle">
+          <input id="toggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <!-- <div class="menu-hamburg">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div> -->
+      </nav>
+    </header>
+    <main>
+      <div id="about"></div>
+      <section class="container container-about">
+        <div id="about" class="observer-about">
+          <h3>Hello, my name is</h3>
+          <h1 class="">Celso <span class="animate-charcter">Barrico.</span></h1>
+
+          <p>I'm a Full Stack developer in formation &#128526;</p>
+          <p>             
+             I have always been passionate about technology, and in June 2022
+             I decided to start my career as a developer, below is a
+             little of my knowledge and projects.
+          </p>
+        </div>
+        <section class="profile-img-container opacity">
+          <img class="profile-img" src="../img/20180727_195934.jpg" alt="" />
+        </section>
+      </section>
+      <section id="knowledge" class="container">
+        <div class="span opacity">
+          <span>
+            KNOWLEDGE
+          </span>
+        </div>
+        <ul class="main-know">
+          <li class="list-know html opacity">
+            <img class="know-img" src="../img/html-5.png" alt="" />
+            <p>
+              HTML (HyperText Markup Language) is the most basic building block of the Web. 
+              It defines the meaning and structure of web content.
+            </p>
+          </li>
+          <li class="list-know css opacity">
+            <img class="know-img" src="../img/css-3.png" alt="" />
+            <p>
+              CSS is the acronym for Cascading Style Sheets, that is, Cascading Style Sheets. 
+              It's a way to style code created by languages ​​like HTML, XML or XHTML, for example.
+            </p>
+          </li>
+          <li class="list-know js opacity">
+            <img class="know-img" src="../img/javascript.png" alt="" />
+            <p>
+              JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled 
+              programming language with first-class functions. 
+              While it is most well-known as the scripting language for Web pages.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="projects" class="container">
+        <div class="span opacity">
+          <span>
+            PROJECTS
+          </span>
+        </div>
+        <ul class="main-projects">
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="../img/pikachu.gif" alt="" />
+            </div>
+            <div class="card-info">
+              <p>Pokedex</p>
+              <p class="text-body">              
+                A pokedex, consuming a pokemon api, search by pokemon name or id
+              </p>
+              <div class="techs">
+                <img src="../img/html-5.png" alt="" />
+                <img src="../img/css-3.png" alt="" />
+                <img src="../img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a href="https://cebarrico.github.io/PokeDex/" class="btm-repo"
+                  >Pokedex</a
+                >
+                <a href="https://github.com/cebarrico/PokeDex" class="btm-repo"
+                  >Repository</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="../img/mario.gif" alt="" />
+            </div>
+            <div class="card-info">
+              <p>Mario Game</p>
+              <p class="text-body">
+                A little browser game, from Super Mario, was my first
+                adventure in the world of Dev.
+                
+              </p>
+              <div class="techs">
+                <img src="../img/html-5.png" alt="" />
+                <img src="../img/css-3.png" alt="" />
+                <img src="../img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a
+                  href="https://cebarrico.github.io/primeirojogo/"
+                  class="btm-repo"
+                  >Mario Run</a
+                >
+                <a
+                  href="https://github.com/cebarrico/primeirojogo"
+                  class="btm-repo"
+                  >Repository</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="list-projects opacity">
+            <div class="card-img">
+              <img src="../img/gitsearch.png" alt="" />
+            </div>
+            <div class="card-info">
+              <p>GitSearch</p>
+              <p class="text-body">
+                Academic project, from Kenzy Academy, using the GitHub API,
+                to search your users and repositories.
+              </p>
+              <div class="techs">
+                <img src="../img/html-5.png" alt="" />
+                <img src="../img/css-3.png" alt="" />
+                <img src="../img/javascript.png" alt="" />
+              </div>
+
+              <div>
+                <a
+                  href="https://cebarrico.github.io/primeirojogo/"
+                  class="btm-repo"
+                  >GitSearch</a
+                >
+                <a
+                  href="https://github.com/cebarrico/primeirojogo"
+                  class="btm-repo"
+                  >Repository</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div class="light x1"></div>
+    <div class="light x2"></div>
+    <div class="light x3"></div>
+    <div class="light x4"></div>
+    <div class="light x5"></div>
+    <div class="light x6"></div>
+    <div class="light x7"></div>
+    <div class="light x8"></div>
+    <div class="light x9"></div>
+  </body>
+  </body>
+</html>
