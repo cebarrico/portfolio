@@ -26,7 +26,7 @@
   width: 25px;
   height: 25px;
   background-color: #e03c3c;
-  background-image: url(/src/img/brazil.png);
+  background-image: url(../img/brazil.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@
 
 #toggle:checked + .slider::after {
   content: "";
-  background-image: url(/src/img/united-states.png);
+  background-image: url(../img/united-states.png);
 
   background-position: center;
   background-repeat: no-repeat;

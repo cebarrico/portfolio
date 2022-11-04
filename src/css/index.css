@@ -256,7 +256,7 @@ section {
   border-radius: 15px;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--second),
     0 0 0.8rem var(--second), 0 0 2.8rem var(--second), 0 0 1.3rem var(--second);
-  animation: pulsate 1.5s infinite alternate;
+
   z-index: 1;
 }
 .menu-click > a {
