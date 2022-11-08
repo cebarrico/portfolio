@@ -121,7 +121,7 @@
 }
 .span {
   font-size: 80px;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s linear;
 }
 .appear {

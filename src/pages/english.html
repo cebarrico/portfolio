@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="../css/bg.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/changeLangue.css" />
-    <link rel="stylesheet" href="../css/knowledgeCards.css">
-    <link rel="stylesheet" href="../css/projectCars.css">
-    <link rel="stylesheet" href="../css/moda.css">
+    <link rel="stylesheet" href="../css/knowledgeCards.css" />
+    <link rel="stylesheet" href="../css/projectCars.css" />
+    <link rel="stylesheet" href="../css/moda.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Celso Barrico</title>
     <link rel="icon" href="../img/favicon.png" />
     <script defer type="module" src="./script.js"></script>
     <script defer type="module" src="../script/observer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a9aea77d0c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -44,65 +49,119 @@
       <div id="about"></div>
       <section class="container container-about">
         <div id="about" class="observer-about">
-          <h3>Hello, my name is</h3>
-          <h1 class="">Celso <span class="animate-charcter">Barrico.</span></h1>
+          <h3 data-aos="fade-down-right" data-aos-mirror="true">
+            Hello, my name is
+          </h3>
+          <h1
+            class=""
+            data-aos="zoom-in"
+            data-aos-mirror="true"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Celso <span class="animate-charcter">Barrico.</span>
+          </h1>
 
-          <p>I'm a Full Stack developer in formation &#128526;</p>
-          <p>             
-             I have always been passionate about technology, and in June 2022
-             I decided to start my career as a developer, below is a
-             little of my knowledge and projects.
+          <p data-aos="fade-up-left" data-aos-mirror="true">
+            I'm a Full Stack developer in formation &#128526;
+          </p>
+          <p data-aos="fade-up-left" data-aos-mirror="true">
+            I have always been passionate about technology, and in June 2022 I
+            decided to start my career as a developer, below is a little of my
+            knowledge and projects.
           </p>
         </div>
-        <section class="profile-img-container opacity">
-          <img class="profile-img" src="../img/20180727_195934.jpg" alt="" />
+        <section
+          class="profile-img-container opacity"
+          data-aos="flip-right"
+          data-aos-mirror="true"
+        >
+          <a href="https://www.linkedin.com/in/celsobarrico/"
+            ><i class="fa-brands fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/cebarrico" class="git"
+            ><i class="fa-brands fa-github fa-3x"></i
+          ></a>
+          <!-- <img
+            class="profile-img"
+            data-aos="flip-right"
+            data-aos-mirror="true"
+            src="../img/20180727_195934.jpg"
+            alt=""
+          /> -->
         </section>
       </section>
       <section id="knowledge" class="container">
-        <div class="span opacity">
-          <span>
-            KNOWLEDGE
-          </span>
+        <div
+          class="span"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
+          <span> KNOWLEDGE </span>
         </div>
         <ul class="main-know">
-          <li class="list-know html opacity">
+          <li
+            class="list-know html opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="../img/html-5.png" alt="" />
             <p>
-              HTML (HyperText Markup Language) is the most basic building block of the Web. 
-              It defines the meaning and structure of web content.
+              HTML (HyperText Markup Language) is the most basic building block
+              of the Web. It defines the meaning and structure of web content.
             </p>
           </li>
-          <li class="list-know css opacity">
+          <li
+            class="list-know css opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="../img/css-3.png" alt="" />
             <p>
-              CSS is the acronym for Cascading Style Sheets, that is, Cascading Style Sheets. 
-              It's a way to style code created by languages ​​like HTML, XML or XHTML, for example.
+              CSS is the acronym for Cascading Style Sheets, that is, Cascading
+              Style Sheets. It's a way to style code created by languages ​​like
+              HTML, XML or XHTML, for example.
             </p>
           </li>
-          <li class="list-know js opacity">
+          <li
+            class="list-know js opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="../img/javascript.png" alt="" />
             <p>
-              JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled 
-              programming language with first-class functions. 
-              While it is most well-known as the scripting language for Web pages.
+              JavaScript (JS) is a lightweight, interpreted, or just-in-time
+              compiled programming language with first-class functions. While it
+              is most well-known as the scripting language for Web pages.
             </p>
           </li>
         </ul>
       </section>
       <section id="projects" class="container">
-        <div class="span opacity">
-          <span>
-            PROJECTS
-          </span>
+        <div
+          class="span opacity"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
+          <span> PROJECTS </span>
         </div>
         <ul class="main-projects">
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="../img/pikachu.gif" alt="" />
             </div>
             <div class="card-info">
               <p>Pokedex</p>
-              <p class="text-body">              
+              <p class="text-body">
                 A pokedex, consuming a pokemon api, search by pokemon name or id
               </p>
               <div class="techs">
@@ -121,16 +180,19 @@
               </div>
             </div>
           </li>
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="../img/mario.gif" alt="" />
             </div>
             <div class="card-info">
               <p>Mario Game</p>
               <p class="text-body">
-                A little browser game, from Super Mario, was my first
-                adventure in the world of Dev.
-                
+                A little browser game, from Super Mario, was my first adventure
+                in the world of Dev.
               </p>
               <div class="techs">
                 <img src="../img/html-5.png" alt="" />
@@ -152,15 +214,19 @@
               </div>
             </div>
           </li>
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="../img/gitsearch.png" alt="" />
             </div>
             <div class="card-info">
               <p>GitSearch</p>
               <p class="text-body">
-                Academic project, from Kenzy Academy, using the GitHub API,
-                to search your users and repositories.
+                Academic project, from Kenzy Academy, using the GitHub API, to
+                search your users and repositories.
               </p>
               <div class="techs">
                 <img src="../img/html-5.png" alt="" />
@@ -169,16 +235,8 @@
               </div>
 
               <div>
-                <a
-                  href="#"
-                  class="btm-repo"
-                  >GitSearch</a
-                >
-                <a
-                  href="#"
-                  class="btm-repo"
-                  >Repository</a
-                >
+                <a href="#" class="btm-repo">GitSearch</a>
+                <a href="#" class="btm-repo">Repository</a>
               </div>
             </div>
           </li>
@@ -194,6 +252,7 @@
     <div class="light x7"></div>
     <div class="light x8"></div>
     <div class="light x9"></div>
-  </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script></script>
   </body>
 </html>

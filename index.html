@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="./src/css/knowledgeCards.css" />
     <link rel="stylesheet" href="./src/css/projectCars.css" />
     <link rel="stylesheet" href="./src/css/moda.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Celso Barrico</title>
     <link rel="icon" href="./src/img/favicon.png" />
     <script defer type="module" src="./src/script/script.js"></script>
     <script defer type="module" src="./src/script/observer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a9aea77d0c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -28,7 +33,7 @@
           alt=""
         />
         <div class="menu">
-          <a class="btm-menu" href="#about">Sobre</a>
+          <a class="btm-menu" href="#about"><span id="teste"></span> Sobre</a>
           <a class="btm-menu" href="#knowledge">Conhecimentos</a>
           <a class="btm-menu" href="#projects">Projetos</a>
           <a class="btm-menu" id="contact" href="#">Contato</a>
@@ -43,26 +48,59 @@
       <div id="about"></div>
       <section class="container container-about">
         <div id="about" class="observer-about">
-          <h3>Ola, meu nome é</h3>
-          <h1 class="">Celso <span class="animate-charcter">Barrico.</span></h1>
+          <h2 data-aos="fade-down-right" data-aos-mirror="true">
+            Ola, meu nome é...
+          </h2>
+          <h1
+            class=""
+            data-aos="zoom-in"
+            data-aos-mirror="true"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Celso <span class="animate-charcter">Barrico.</span>
+          </h1>
 
-          <p>Sou um desenvolverdor Full-Stack em formação &#128526;</p>
-          <p>
+          <p data-aos="fade-up-left" data-aos-mirror="true">
+            Sou um desenvolverdor Full-Stack em formação &#128526;
+          </p>
+          <p data-aos="fade-up-left" data-aos-mirror="true">
             Sempre fui apaixonado pela área da tecnologia, e em junho de 2022
             decidi começar minha carreira como desenvolvedor,abaixo segue um
             pouco dos meus conhecimentos e projetos.
           </p>
         </div>
-        <section class="profile-img-container opacity">
-          <img class="profile-img" src="./src/img/20180727_195934.jpg" alt="" />
+        <section
+          class="profile-img-container opacity"
+          data-aos="flip-right"
+          data-aos-mirror="true"
+        >
+          <a href="https://www.linkedin.com/in/celsobarrico/"
+            ><i class="fa-brands fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/cebarrico" class="git"
+            ><i class="fa-brands fa-github fa-3x"></i
+          ></a>
+
+          <!-- <img class="profile-img" src="./src/img/20180727_195934.jpg" alt="" /> -->
         </section>
       </section>
       <section id="knowledge" class="container">
-        <div class="span opacity">
+        <div
+          class="span"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
           <span> CONHECIMENTOS </span>
         </div>
         <ul class="main-know">
-          <li class="list-know html opacity">
+          <li
+            class="list-know html opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="./src/img/html-5.png" alt="" />
             <p>
               HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
@@ -70,7 +108,12 @@
               da web.
             </p>
           </li>
-          <li class="list-know css opacity">
+          <li
+            class="list-know css opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="./src/img/css-3.png" alt="" />
             <p>
               O que é o no CSS? CSS é a sigla para Cascading Style Sheets, ou
@@ -78,7 +121,12 @@
               código criado por linguagens como HTML, XML ou XHTML, por exemplo.
             </p>
           </li>
-          <li class="list-know js opacity">
+          <li
+            class="list-know js opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <img class="know-img" src="./src/img/javascript.png" alt="" />
             <p>
               JavaScript® (JS) é uma linguagem leve, interpretada e baseada em
@@ -89,11 +137,20 @@
         </ul>
       </section>
       <section id="projects" class="container">
-        <div class="span opacity">
+        <div
+          class="span"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
           <span> PROJETOS </span>
         </div>
         <ul class="main-projects">
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="./src/img/pikachu.gif" alt="" />
             </div>
@@ -119,7 +176,11 @@
               </div>
             </div>
           </li>
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="./src/img/mario.gif" alt="" />
             </div>
@@ -149,7 +210,11 @@
               </div>
             </div>
           </li>
-          <li class="list-projects opacity">
+          <li
+            class="list-projects opacity"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card-img">
               <img src="./src/img/gitsearch.png" alt="" />
             </div>
@@ -183,5 +248,6 @@
     <div class="light x7"></div>
     <div class="light x8"></div>
     <div class="light x9"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
