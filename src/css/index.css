@@ -232,6 +232,7 @@ section {
     max-width: 400px;
   }
 }
+
 @media (min-width: 1500px) {
   .profile-img-container {
     min-height: 568px;
