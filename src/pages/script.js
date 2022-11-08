@@ -1,4 +1,5 @@
 import { contactPt } from "../script/modal.js";
+AOS.init();
 const language = document.querySelector(".language");
 const checkbox = document.querySelector("#toggle");
 const checked = localStorage.getItem("check");
